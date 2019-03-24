@@ -1,6 +1,6 @@
 """
 Welcome! The purpose of this script is to help fix the spacing issue 
-when copying and pasting a protein or cDNA sequence from a public database. 
+when a sequence is downloaded as a FASTA file from a public database. 
 
 The result will give you the entire sequence in a single line and stored 
 in an output.txt file. 
