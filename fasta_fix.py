@@ -10,8 +10,7 @@ in an output.txt file.
 # import dependencies
 import os
 
-# open sequence from .txt or .fasta file
-# for example, the cDNA of the period gene from Drosophila melanogaster
+# open .txt or .fasta file
 sequence = open("FlyBase_YGMHKX.fasta", 'r')
 
 # create empty list to store gene name (starts at >) and sequence result
