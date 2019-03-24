@@ -1,14 +1,16 @@
-# fasta-fix
-The purpose of this folder is to help remove improper tab indentation of a sequence in a FASTA file. 
+# Fix improper spacing of a sequence in FASTA format 
+The purpose of this folder is to remove improper tab indentation of a sequence in FASTA format to generate the sequence in a single line. 
 
-In this case, we have downloaded the <i>period</i> gene of <i>Drosophila melanogaster </i> from Flybase. 
 
-http://flybase.org/download/sequence/FBgn0003068/FBpp
+In this case, we have downloaded the FASTA file containing <i>period</i> gene of <i>Drosophila melanogaster </i> from Flybase. 
+Source: http://flybase.org/download/sequence/FBgn0003068/FBpp
+
 
 ##### Original FASTA format: 
 
-<img src=""> 
+<img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/fasta_example.png"> 
 
 
 ##### Output: 
 
+<img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/output_example.png">
