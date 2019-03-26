@@ -19,6 +19,7 @@ Your FASTA file should have indentation. See example.
 
 <img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/fasta_example.png"> 
 
+## Instructions 
 Add a FASTA file in the fasta-fix folder for you to fix. In this case, the file is [FlyBase_YGMHKX.fasta](https://github.com/ying-li-python/fasta-fix/blob/master/FlyBase_YGMHKX.fasta).
 
 Using a text or code editor, open fasta_fix.py. 
@@ -29,7 +30,7 @@ Replace the FASTA file path to your own.
 fastafile = open("FlyBase_YGMHKX.fasta", 'r')
 ```
 
-### Running the script 
+## Running the script 
 Now that you provided the setup, you can run the the script in command line. Make sure your directory is still in fasta-fix folder.
 
 ```
@@ -43,7 +44,7 @@ Your script will generate a new FASTA file named output.fasta in the same folder
 <img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/output.png">
 
 
-### Authors: 
+## Authors: 
 Ying Li 
 
 
