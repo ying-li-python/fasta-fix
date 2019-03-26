@@ -31,7 +31,7 @@ fastafile = open("FlyBase_YGMHKX.fasta", 'r')
 ```
 
 ## Running the script 
-Now that you provided the setup, you can run the the script in command line. Make sure your directory is still in fasta-fix folder.
+Now that you finished setting up, you are ready to run the the script in command line. Make sure your directory is still in fasta-fix folder.
 
 ```
 python fasta_fix.py 
