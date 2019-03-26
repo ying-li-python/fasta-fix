@@ -15,11 +15,11 @@ cd fasta-fix
 
 Your FASTA file should have indentation. See example.  
 
-#### Example FASTA file: 
+Example FASTA: 
 
 <img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/fasta_example.png"> 
 
-## Instructions 
+## Setting up
 Add a FASTA file in the fasta-fix folder for you to fix. In this case, the file is [FlyBase_YGMHKX.fasta](https://github.com/ying-li-python/fasta-fix/blob/master/FlyBase_YGMHKX.fasta).
 
 Using a text or code editor, open fasta_fix.py. 
