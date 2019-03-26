@@ -3,9 +3,9 @@ Welcome! The purpose of this script is to help fix the spacing issue
 when a sequence is downloaded as a FASTA file from a public database. 
 
 The result will give you the entire sequence in a single line and stored 
-in an output.txt file. 
+in a new fasta file. 
 
-Example: $ python fasta_fix.py
+Please see READNE.md for detailed instructions. 
 """
 
 # import dependencies
@@ -40,7 +40,7 @@ print(f'{fasta_name}\n{fixed_sequence}')
 
 
 # write results in output file 
-with open("fastaOutput.txt", "w") as output_file: 
+with open("output.fasta", "w") as output_file: 
 	output_file.write(f'{fasta_name}\n{fixed_sequence}')
 
 # close files 
