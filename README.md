@@ -13,7 +13,7 @@ cd fasta-fix
 ```
 ### Original FASTA file 
 
-Your FASTA file should have indentation. See example.  
+This FASTA file has improper indentation. 
 
 Example FASTA: 
 
