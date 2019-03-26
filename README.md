@@ -22,7 +22,7 @@ Example FASTA:
 ## Setting up
 Add a FASTA file in the fasta-fix folder for you to fix. In this case, the file is [FlyBase_YGMHKX.fasta](https://github.com/ying-li-python/fasta-fix/blob/master/FlyBase_YGMHKX.fasta).
 
-Using a text or code editor, open fasta_fix.py. 
+Using a text or code editor, open fasta_fix.py. I highly recommend [Visual Studio](https://code.visualstudio.com/).
 
 Replace the FASTA file path to your own. 
 
@@ -39,12 +39,14 @@ python fasta_fix.py
 
 Your script will generate a new FASTA file named output.fasta in the same folder. And you're done! 
 
-##### Output: 
+Output: 
 
 <img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/output.png">
 
+## Methods
+For this script, we created a for-loop, set conditions (```if else``` statements), and used ```.split()``` and ```.close()``` function.
 
-## Authors: 
+## Authors
 Ying Li 
 
 
