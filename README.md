@@ -1,4 +1,4 @@
-# Fix improper spacing of a FASTA sequence 
+# Fix spacing in FASTA 
 FASTA is the standard format for biologists to store a sequence of a gene. However, some FASTA files have improper spacing when downloaded from a public database such as [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/). The purpose of this folder is to remove improper tab indentation of a sequence in FASTA format to generate the sequence in a single line. 
 
 
