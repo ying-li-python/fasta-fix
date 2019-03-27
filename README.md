@@ -4,6 +4,9 @@ FASTA is the standard format for biologists to store a sequence of a gene. Howev
 
 In this case, we have downloaded the FASTA file containing the <i>[period](http://flybase.org/download/sequence/FBgn0003068/FBpp)</i> gene of <i>Drosophila melanogaster </i> from Flybase. 
 
+## Featured 
+If you want a step-by-step tutorial on how to write this script, click [here](https://creativepython.wordpress.com/2019/03/27/biologyhelp-fix-fasta-indentation-in-python/).
+
 ## Getting started
 
 You will need to download/clone this folder, and in command line, route to this folder using the cd command. 
