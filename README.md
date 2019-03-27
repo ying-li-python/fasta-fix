@@ -1,21 +1,52 @@
-# Fix improper spacing of a sequence in FASTA format 
-The purpose of this folder is to remove improper tab indentation of a sequence in FASTA format to generate the sequence in a single line. 
+# Fix spacing in FASTA 
+FASTA is the standard format for biologists to store a sequence of a gene. However, some FASTA files have improper spacing when downloaded from a public database such as [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/). The purpose of this folder is to remove improper tab indentation of a sequence in FASTA format to generate the sequence in a single line. 
 
 
-In this case, we have downloaded the FASTA file containing <i>period</i> gene of <i>Drosophila melanogaster </i> from Flybase. 
-Source: http://flybase.org/download/sequence/FBgn0003068/FBpp
+In this case, we have downloaded the FASTA file containing the <i>[period](http://flybase.org/download/sequence/FBgn0003068/FBpp)</i> gene of <i>Drosophila melanogaster </i> from Flybase. 
 
-To run this script: 
+## Getting started
 
-1) Download/clone this folder 
-2) Add your FASTA file and replace file path in fasta_fix.py
-3) In terminal, cd to this folder and then run the script ($ python fasta_fix.py)
+You will need to download/clone this folder, and in command line, route to this folder using the cd command. 
+```
+git clone https://github.com/ying-li-python/fasta-fix.git
+cd fasta-fix 
+```
+### Original FASTA file 
 
-##### Original FASTA file: 
+This FASTA file has improper indentation. 
+
+Example FASTA: 
 
 <img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/fasta_example.png"> 
 
+## Setting up
+Add a FASTA file in the fasta-fix folder for you to fix. In this case, the file is [FlyBase_YGMHKX.fasta](https://github.com/ying-li-python/fasta-fix/blob/master/FlyBase_YGMHKX.fasta).
 
-##### Output as FASTA: 
+Using a text or code editor, open fasta_fix.py. I highly recommend [Visual Studio](https://code.visualstudio.com/).
 
-<img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/fasta_output.png">
+Replace the FASTA file path to your own. 
+
+```
+fastafile = open("FlyBase_YGMHKX.fasta", 'r')
+```
+
+## Running the script 
+Now that you finished setting up, you are ready to run the the script in command line. Make sure your directory is still in fasta-fix folder.
+
+```
+python fasta_fix.py 
+```
+
+Your script will generate a new FASTA file named output.fasta in the same folder. And you're done! 
+
+Output: 
+
+<img src="https://raw.githubusercontent.com/ying-li-python/fasta-fix/master/Images/output.png">
+
+## Methods
+For this script, we created a for-loop, set conditions (```if else``` statements), and used ```.split()``` and ```.close()``` function.
+
+## Authors
+Ying Li 
+
+
