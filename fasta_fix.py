@@ -11,37 +11,38 @@ Please see READNE.md for detailed instructions.
 # import dependencies
 import os
 
-# open .txt or .fasta file
+# open and read FASTA file
 fastafile = open("FlyBase_YGMHKX.fasta", 'r')
 
-# create empty list to store gene name (starts at >) and sequence result
-fasta_name = ''
+# assign variables to store header and sequence result
+fasta_header = ''
 fixed_sequence = ''
 
-# creatae for loop to iterate every line of the file
+# create for loop to iterate every line of the file
 for line in fastafile: 
 
 	# strips line 
 	line = line.strip()
 
-	# for header that includes gene information starting with >
+	# for header that starts with the symbol >
 	if line[0] == ">":
 
-		# add header to the list 
-		fasta_name = ">" + line[1:].strip()
+		# create a variable that stores the header information with the symbol > at the start
+		fasta_header = ">" + line[1:]
 	
-	# for lines except header
+	# for lines that do not start with the symbol > 
 	else:  
-		# concatenate lines 
+
+		# concatenate lines and store sequence to variable 
 		fixed_sequence = fixed_sequence+line 
 
 # print results in terminal 
-print(f'{fasta_name}\n{fixed_sequence}')
+print(f'{fasta_header}\n{fixed_sequence}')
 
 
 # write results in output file 
 with open("output.fasta", "w") as output_file: 
-	output_file.write(f'{fasta_name}\n{fixed_sequence}')
+	output_file.write(f'{fasta_header}\n{fixed_sequence}')
 
 # close files 
 fastafile.close()
