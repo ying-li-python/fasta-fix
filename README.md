@@ -1,8 +1,7 @@
 # Fix spacing in FASTA 
-FASTA is the standard format for biologists to store a sequence of a gene. However, some FASTA files have improper spacing when downloaded from a public database such as [Pubmed](https://www.ncbi.nlm.nih.gov/pubmed/). The purpose of this folder is to remove improper tab indentation of a sequence in FASTA format to generate the sequence in a single line. 
+For some strange reason, the conventional FASTA contains a sequence that breaks at every 70-100 letters and creates an indentation. This is a major problem if we want to use computational tools to help us analyze genetic information.
 
-
-In this case, we have downloaded the FASTA file containing the <i>[period](http://flybase.org/download/sequence/FBgn0003068/FBpp)</i> gene of <i>Drosophila melanogaster </i> from Flybase. 
+To avoid spending too much time re-formatting every FASTA sequence from [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/), I wrote a Python script to do so. For this example, I used the <i>[period](http://flybase.org/download/sequence/FBgn0003068/FBpp)</i> gene of <i>Drosophila melanogaster </i> from Flybase. It was my gene of interest during my PhD research.
 
 ## Featured 
 If you want a step-by-step tutorial on how to write this script, click [here](https://creativepython.wordpress.com/2019/03/27/biologyhelp-fix-fasta-indentation-in-python/).
@@ -15,8 +14,6 @@ git clone https://github.com/ying-li-python/fasta-fix.git
 cd fasta-fix 
 ```
 ### Original FASTA file 
-
-This FASTA file has improper indentation. 
 
 Example FASTA: 
 
